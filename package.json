@@ -7,7 +7,10 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/source-faker": "^0.3.0",
+    "axios": "^0.19.2",
     "gridsome": "^0.7.0",
+    "gridsome-source-google-sheets": "^0.4.1",
     "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
