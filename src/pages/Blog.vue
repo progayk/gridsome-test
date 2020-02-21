@@ -3,15 +3,15 @@
     <div class="container">
       <h1 class="text-black text-3xl font-bold mt-4">Blog</h1>
 
-      <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="mt-4 grid rounded-xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <g-link
           tag="div"
-          class="max-w-md rounded-lg shadow-xl cursor-pointer hover:shadow-2xl bg-white"
+          class="max-w-md rounded-xl shadow-xl cursor-pointer hover:shadow-2xl bg-white"
           v-for="post in $page.allBlogPost.edges"
           :key="post.id"
           :to="`/blog/${post.node.id}`"
         >
-          <g-image fit="cover" class="rounded h-48 w-full" src="https://via.placeholder.com/400/333333"></g-image>
+          <g-image fit="cover" class="rounded h-56 w-full" src="https://via.placeholder.com/400/333333"></g-image>
 
           <div class="p-6">
             <h3 class="font-semibold uppercase text-gray-900 hover:underline">{{post.node.title}}</h3>

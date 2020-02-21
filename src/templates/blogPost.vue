@@ -1,10 +1,10 @@
 <template>
   <Layout>
 
-    <g-image class="min-w-full h-56" src="https://via.placeholder.com/400/333333"></g-image>
+    <g-image class="min-w-full h-64" src="https://via.placeholder.com/400/333333"></g-image>
     <div class="container">
       <h3 class="mt-6 text-base text-purple-500 tracking-wide uppercase font-semibold">marketing</h3>
-      <h1 class="mt-4 text-gray-900 font-bold text-2xl leading-8 capitalize">{{ $page.post.title }}</h1>
+      <h1 class="mt-4 text-gray-900 font-bold text-3xl leading-9 capitalize">{{ $page.post.title }}</h1>
       <p class="mt-4 text-sm text-gray-600 "><span class=" font-serif font-light">author</span>&nbsp;&nbsp;<span class="text-gray-700 italic font-serif capitalize">{{ $page.post.title.split(" ")[2] + ' ' + $page.post.title.split(' ')[4]}}</span>  </p>
       <p class="text-gray-600 text-sm"><span class=" font-serif font-light">published at</span>&nbsp;&nbsp;<span class="text-gray-700 italic font-serif">2 May 2020</span> </p>
 
