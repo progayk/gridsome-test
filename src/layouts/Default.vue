@@ -1,8 +1,8 @@
 <template>
   <div class="pt-12">
-    <header class="inset-x-0 px-4 fixed top-0 z-100 h-12 bg-gray-200 flex justify-between items-center border-b border-gray-400">
+    <header class="inset-x-0 px-4 fixed top-0 z-100 h-12 bg-gray-100 flex justify-between items-center border-b border-gray-400">
       <strong class="">
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+        <g-link tag="span" class="text-black" to="/">{{ $static.metadata.siteName }}</g-link>
       </strong>
       <nav class="flex text-gray-600 ">
         <g-link class="mx-2 lg:mx-4 inline-block hover:text-blue-400" to="/">Home</g-link>

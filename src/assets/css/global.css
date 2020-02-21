@@ -2,15 +2,41 @@
 
 html {
     @apply antialiased;
+    /* @apply theme-dark; */
 }
 
 body {
-    @apply bg-gray-100;
+    /* @apply bg-white; */
     @apply leading-normal;
 }
 
+a.active--exact.is-active {
+   @apply text-gray-900;
+   @apply underline;
+}
 
 
 @tailwind components;
 
 @tailwind utilities;
+
+
+/* 
+.theme-light {
+    --theme-primary-color: rgb(99, 91, 91);
+    --theme-secondary-color: black;
+    --theme-ternary-color: purple;
+
+    background-color: var(--theme-primary-color);
+    color: var(--theme-secondary-color) 
+
+}
+
+.theme-dark {
+    --theme-primary-color: rgb(99, 91, 91);
+    --theme-secondary-color: rgb(99, 91, 91);
+    --theme-ternary-color: purple;
+
+    background-color: var(--theme-secondary-color);
+    color: var(--theme-primary-color) 
+} */
