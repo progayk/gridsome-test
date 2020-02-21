@@ -1,10 +1,10 @@
 <template>
   <Layout>
-    <g-image class="min-w-full h-48" src="https://via.placeholder.com/400/333333"></g-image>
 
+    <g-image class="min-w-full h-56" src="https://via.placeholder.com/400/333333"></g-image>
     <div class="container">
-      <h3 class="mt-6 text-sm text-purple-500 tracking-wide uppercase font-semibold">marketing</h3>
-      <h1 class="mt-2 text-gray-900 font-bold text-2xl leading-8">{{ $page.post.title }}</h1>
+      <h3 class="mt-8 text-base text-purple-500 tracking-wide uppercase font-semibold">marketing</h3>
+      <h1 class="mt-4 text-gray-900 font-bold text-2xl leading-8">{{ $page.post.title }}</h1>
 
       <div v-for="i in 3" :key="i" class="mt-4 text-gray-700">
         <p >{{$page.post.body }}</p>
