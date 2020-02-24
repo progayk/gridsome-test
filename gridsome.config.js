@@ -25,7 +25,7 @@ module.exports = {
     {
       use: 'gridsome-source-google-sheets',
       options: {
-        sheetId: '1ydBsziaGyR-YfbA2c0xsobT0s9g0vo1gctP1IucUaC0',
+        sheetId: '1baU6uIp8hy9oh3GgdhyfkLKacqTKgZXIx2EsX2YDVCs',
         apiKey: 'AIzaSyB-2Awx0uzYktg-zMRbYmCBzT7beR6qxKE',
         // route: '/e/:web_scraper_order'
         // type: 'TYPE_NAME', //Optional - default is googleSheet. Used for graphql queries.

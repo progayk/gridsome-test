@@ -4,15 +4,17 @@
       <!-- Learn how to use images here: https://gridsome.org/docs/images -->
       <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
 
-      <h1 class="font-bold text-3xl mt-4">Home</h1>
+      <h1 class="font-bold text-3xl mt-4">Patients</h1>
 
-
-      <div class="my-4" v-for="page in $page.allGoogleSheet.edges" :key="page.node.id">
-        <g-link :to="`/sheet/${page.node.id}`">
-          <strong>{{ page.node.event_name }}</strong>
-          - {{ page.node.id }}
-        </g-link>
-      </div>
+      <ol class="my-4" v-for="page in $page.allGoogleSheet.edges" :key="page.node.id">
+        <li v-if="page.node.First_Name">
+          <g-link class="capitalize" :to="`/sheet/${page.node.id}`">
+            <strong class="capitalize" v-if="page.node.Last_Name">{{ page.node.Last_Name}}, </strong>{{ page.node.First_Name }}  -
+            <i class="italic capitalize">({{ page.node.Nationality }})</i>
+            <!-- - {{ page.node.id }} -->
+          </g-link>
+        </li>
+      </ol>
     </div>
   </Layout>
 </template>
@@ -31,7 +33,9 @@ query {
     edges {
       node {
         id
-        event_name
+        Nationality
+        Last_Name
+        First_Name
       }
     }
   }

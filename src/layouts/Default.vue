@@ -5,7 +5,7 @@
         <g-link tag="span" class="text-black" to="/">{{ $static.metadata.siteName }}</g-link>
       </strong>
       <nav class="flex text-gray-600 ">
-        <g-link class="mx-2 lg:mx-4 inline-block hover:text-blue-400" to="/">Home</g-link>
+        <g-link class="mx-2 lg:mx-4 inline-block hover:text-blue-400" to="/">Patients</g-link>
         <g-link class="mx-2 lg:mx-4 inline-block" to="/about/">About</g-link>
         <g-link class="mx-2 lg:mx-4 inline-block" to="/faker/">Faker</g-link>
         <g-link class="ml-2 lg:mx-4 inline-block" to="/blog/">Blog</g-link>
